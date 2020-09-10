@@ -1,2 +1,3 @@
-# archsubvolumesetup
-I was fidding around i don't know if this script works yet but it should i will be testing it in a vm today
+Use the following command to run the script easily in one run:
+
+wget https://raw.githubusercontent.com/steven66619/archsubvolumesetup/master/subvol.sh && sudo chmod +x setup.sh && ./setup.sh
