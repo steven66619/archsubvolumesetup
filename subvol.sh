@@ -17,9 +17,7 @@ umount /dev/sda2
 mount -o compress=lzo,relatime,subvol=@ /dev/sda2 /mnt
 mkdir /mnt/home
 mount -o compress=lzo,relatime,subvol=@home /dev/sda2 /mnt/@home
-mount -o compress=lzo,relatime,subvolid=5 /dev/sda2 /mnt/@btrfs
-# mount boot partition 
-mkdir /mnt/boot
-mount /dev/sda1 /mnt/boot
+mount -o compress=lzo,relatime,subvolid=5 /dev/sda2 /mnt/btrfs
+pacstrap /mnt base base-devel linux linux-headers plasma plasma-meta grub 
 # thank you for using this script 
 echo $'\n'$"*** All done with subvolumes. ***"
